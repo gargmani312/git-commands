@@ -217,4 +217,21 @@ Open .gitconfig file with ```nano ~/.gitconfig``` and add email and userer in op
 [credential]
         username = gargmani312
 ```
-# Add git multiple Account
+# Use Multiple Git Account In Linux
+Create a folder in home directory name ```.git_cred```
+Create separate file for each account e.g you have a account named ```gargmani``` you need to create a file named ```.gargmani``` and put the credentials as ```https://username:password@github.com``` After that go to project directory and then .git --> config and then update this file as 
+```
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/gargmani312/git-commands.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[credential]
+        helper = store --file /home/mani/.git_cred/.gargmani
+```
