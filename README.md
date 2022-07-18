@@ -219,7 +219,7 @@ Open .gitconfig file with ```nano ~/.gitconfig``` and add email and userer in op
 ```
 # Use Multiple Git Account In Linux
 Create a folder in home directory name ```.git_cred```
-Create separate file for each account e.g you have a account named ```gargmani``` you need to create a file named ```.gargmani``` and put the credentials as ```https://username:password@github.com``` After that go to project directory and then .git --> config and then update this file as 
+Create separate file for each account e.g you have a account named ```gargmani``` you need to create a file named ```.gargmani``` and put the credentials as ```https://username:password@github.com```  and for bitbucket, the credentials is ```https://username:password@bitbucket.org``` After that go to project directory and then .git --> config and then update this file as 
 ```
 [core]
 	repositoryformatversion = 0
